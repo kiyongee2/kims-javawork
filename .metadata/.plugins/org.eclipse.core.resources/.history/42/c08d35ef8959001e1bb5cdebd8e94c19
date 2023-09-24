@@ -1,0 +1,16 @@
+package threads.thread;
+
+public class ThreadTest {
+
+	public static void main(String[] args) {
+		
+		Thread mainThread = Thread.currentThread();
+		
+		System.out.println("프로그램 시작 스레드 이름: " + mainThread.getName());
+		System.out.println("=============================================");
+		
+		ThreadA threadA = new ThreadA();
+		System.out.println(threadA.getName());
+	}
+
+}

@@ -1,0 +1,29 @@
+1. DOMParser
+   - org.w3c.dom 라이브러리
+     .DocumentBuilderFactory - parserFactory 
+       -> DocumentBuilder를 생성해주는 객체
+     .DocumentBuilder - parser
+       -> xml 형식의 문서를 자바 객체로 변환하는 객체
+
+2. API
+   1) Document - xml 문서를 자바에서 쓸 수 있도록 변환해 놓은 객체
+   2) Node, Element
+   3) NodeList
+      - Node의 목록
+     
+3. xml 문서 탐색
+   1) root 엘리먼트 구하기
+   2) root 엘리먼트 하위 엘리먼트 목록 구하기
+   3) 각 엘리먼트 탐색하면서 엘리먼트가 갖고 있는 child 노드를 검색
+   4) 엘리먼트의 속성 추출
+   
+인증키
+Kfh07Rkb5WAsh0TZ1baGNkuP6C3l78vhmJEz7uV9sZiUPOfVZ0sNo84Ay2m0kK1NTBrR4PC8IccsXZg%2B1v5OhQ%3D%3D
+
+uri:
+http://apis.data.go.kr/B551182/pharmacyInfoService/getParmacyBasisList?pageNo=1&numOfRows=10&sidoCd=110000&sgguCd=110019&emdongNm=신내동&yadmNm=온누리&xPos=127.0965441345503&yPos=37.60765568913871&radius=3000&ServiceKey=
+Kfh07Rkb5WAsh0TZ1baGNkuP6C3l78vhmJEz7uV9sZiUPOfVZ0sNo84Ay2m0kK1NTBrR4PC8IccsXZg%2B1v5OhQ%3D%3D
+
+uri 변경
+http://apis.data.go.kr/B551182/pharmacyInfoService/getParmacyBasisList?ServiceKey=
+Kfh07Rkb5WAsh0TZ1baGNkuP6C3l78vhmJEz7uV9sZiUPOfVZ0sNo84Ay2m0kK1NTBrR4PC8IccsXZg%2B1v5OhQ%3D%3D

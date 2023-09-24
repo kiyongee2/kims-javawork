@@ -1,0 +1,17 @@
+package stream.arrays;
+
+import java.util.Arrays;
+
+public class ArraysTest {
+
+	public static void main(String[] args) {
+		int[] num = {3, 1, 2};
+		
+		System.out.println(Arrays.toString(num));
+		
+		//num의 요소중 2개 복사
+		int[] num2 = Arrays.copyOf(num, 2);
+		System.out.println(Arrays.toString(num2));
+	}
+
+}

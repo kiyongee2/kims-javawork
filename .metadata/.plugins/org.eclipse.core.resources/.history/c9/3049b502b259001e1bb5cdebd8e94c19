@@ -1,0 +1,10 @@
+package dataio.filecopy;
+
+public class FileCopyTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

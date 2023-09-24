@@ -1,0 +1,30 @@
+package collection.member;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class MemberHashMap {
+	//필드
+	private Map<Integer, Member> hashMap;
+	
+	//생성자
+	public MemberHashMap() {
+		hashMap = new HashMap<>();
+	}
+	
+	//회원 추가
+	public void addMember(Member member) {
+		hashMap.put(member.getMemberId(), member);
+	}
+	
+	//회원 목록 조회
+	public void showAllMember() {
+		Iterator<Integer> ir = hashMap.keySet().iterator();
+		while(ir.hasNext()) {
+			Integer key = ir.next();
+			Member member = hashMap.get(key);
+			System.out.println(member);
+		}
+	}
+}

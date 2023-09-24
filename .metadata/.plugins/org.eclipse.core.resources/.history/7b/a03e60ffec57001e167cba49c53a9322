@@ -1,0 +1,21 @@
+package collection.member;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MemberHashMap {
+	//필드
+	private Map<Integer, Member> hashMap;
+	
+	//생성자
+	public MemberHashMap() {
+		hashMap = new HashMap<>();
+	}
+	
+	//회원 추가
+	public void addMember(Integer memberId, Member member) {
+		hashMap.put(memberId, member);
+	}
+	
+	
+}

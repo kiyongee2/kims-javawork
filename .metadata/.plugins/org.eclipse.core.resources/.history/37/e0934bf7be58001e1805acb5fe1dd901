@@ -1,0 +1,14 @@
+package lambda.string;
+
+public class StringConcatTest {
+
+	public static void main(String[] args) {
+		
+		StringConcat concat;
+		
+		concat = (s1, s2) -> System.out.println(s1 + s2);
+		concat.makeString("Hill", "State");
+		
+	}
+
+}

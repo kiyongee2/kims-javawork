@@ -1,0 +1,28 @@
+package dataio.readwrite;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class ReadSample {
+
+	public static void main(String[] args) {
+		
+		Reader reader = null;
+		
+		try {
+			reader = new FileReader("c:/file/test.txt");
+			while(true) {
+				int data = reader.read();
+				if(data == -1) break;
+				System.out.println((char)data);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

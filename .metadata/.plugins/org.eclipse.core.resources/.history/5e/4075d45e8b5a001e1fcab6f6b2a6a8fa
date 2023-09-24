@@ -1,0 +1,10 @@
+package threads.waitnotify;
+
+public class WaitNotifyTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

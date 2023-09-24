@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author kiyon
+ *
+ */
+module JarTest {
+}

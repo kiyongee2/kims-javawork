@@ -1,0 +1,11 @@
+package generic.box1;
+
+public class BoxTest {
+
+	public static void main(String[] args) {
+		Box<String> box1 = new Box<>();
+		box1.set("행운을 빌어요");
+		System.out.println(box1.get());
+	}
+
+}

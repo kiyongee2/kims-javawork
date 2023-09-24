@@ -1,0 +1,20 @@
+package stream;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class StreamTest1 {
+
+	public static void main(String[] args) {
+		
+		int[] num = {1, 2, 3, 4};
+		//Integer[] num = {1, 2, 3, 4};
+		
+		/*Stream<Integer> intStream = Arrays.stream(num);
+		intStream.forEach(n -> System.out.println(n));*/
+		
+		//Arrays.stream(num).forEach(n -> System.out.println(n));
+
+	}
+
+}

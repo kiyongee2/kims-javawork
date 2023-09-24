@@ -1,0 +1,12 @@
+package threads.thread;
+
+public class ThreadTest {
+
+	public static void main(String[] args) {
+		
+		Thread mainThread = Thread.currentThread();
+		
+		System.out.println(mainThread.getName());
+	}
+
+}

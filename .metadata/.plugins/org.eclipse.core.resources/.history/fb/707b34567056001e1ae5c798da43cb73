@@ -1,0 +1,25 @@
+package collection.set;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class HashSetTest {
+
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<>();
+		
+		set.add("Java");
+		set.add("JSP");
+		set.add("Spring");
+		set.add("Java");
+		
+		//전체 조회
+		Iterator<String> ir = set.iterator();
+		while(ir.hasNext()) {
+			String element = ir.next();
+			System.out.println(element);
+		}
+	}
+
+}

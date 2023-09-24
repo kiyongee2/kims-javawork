@@ -1,0 +1,12 @@
+package threads.beepprint;
+
+public class ThreadA extends Thread{
+
+	@Override
+	public void run() {
+		for(int i=1; i<=2; i++) {
+			System.out.println(getName() + "가 출력한 내용");
+		}
+	}
+
+}

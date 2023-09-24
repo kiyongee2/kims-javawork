@@ -1,0 +1,34 @@
+package collection.list;
+
+import java.util.Vector;
+
+public class VectorTest {
+
+	public static void main(String[] args) {
+		//Vector 자료 구조 생성
+		Vector<String> vegeList = new Vector<>();
+		
+		//객체 저장
+		vegeList.add("양파");
+		vegeList.add("마늘");
+		vegeList.add("감자");
+		
+		//특정 위치에 추가
+		vegeList.add(2, "상추");
+		
+		//객체 삭제
+		//vegeList.remove("고추");  
+		
+		if(vegeList.contains("마늘")) { //객체가 있는지 확인해야 안전함
+			vegeList.remove("마늘");
+		}
+		
+		//객체 수정
+		vegeList.set(3, "배추");
+		
+		//전체 출력
+		for(String vege : vegeList)
+			System.out.println(vege);
+	}
+
+}

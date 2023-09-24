@@ -1,0 +1,10 @@
+package threads.threadname;
+
+public class ThreadNameTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

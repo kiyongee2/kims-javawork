@@ -1,0 +1,11 @@
+package collection.member;
+
+public class MemberArrayListTest {
+
+	public static void main(String[] args) {
+		MemberArrayList memberList = new MemberArrayList();
+		
+		memberList.addMember(new Member(1001, "이순신"));
+	}
+
+}
