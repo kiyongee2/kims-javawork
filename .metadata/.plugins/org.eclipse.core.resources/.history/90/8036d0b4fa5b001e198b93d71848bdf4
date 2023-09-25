@@ -1,0 +1,10 @@
+package array2d;
+
+public class Array2dStar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

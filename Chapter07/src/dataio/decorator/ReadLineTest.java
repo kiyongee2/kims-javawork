@@ -11,16 +11,17 @@ public class ReadLineTest {
 		try {
 			BufferedReader br = new BufferedReader(
 					new FileReader("message.txt"));
-			while(true) {
+			/*while(true) {
 				String data = br.readLine();
 				if(data == null) break;
 				System.out.println(data);
+			}*/
+			String data;
+			while((data = br.readLine()) != null) {
+				System.out.println(data);
 			}
 			br.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		}catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

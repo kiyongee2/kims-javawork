@@ -9,6 +9,7 @@ import java.io.ObjectOutputStream;
 public class ObjectInputOutputStreamTest {
 
 	public static void main(String[] args) {
+		//객체를 역직렬화해서 파일에 쓰기
 		try(FileOutputStream fos = new FileOutputStream("object.dat");
 			ObjectOutputStream oos = new ObjectOutputStream(fos)){
 			//객체 생성
@@ -22,6 +23,7 @@ public class ObjectInputOutputStreamTest {
 			e.printStackTrace();
 		}
 		
+		//객체를 역직렬화해서 파일에서 읽기
 		try(FileInputStream fis = new FileInputStream("object.dat");
 				ObjectInputStream ois = new ObjectInputStream(fis)){
 			
