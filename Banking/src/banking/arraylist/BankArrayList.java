@@ -2,6 +2,7 @@ package banking.arraylist;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 import banking.array.Account;
 
@@ -53,22 +54,28 @@ public class BankArrayList {
 		System.out.println("-------------------------------------------");
 		
 		while(true) {
-			System.out.print("계좌번호:  ");
+			System.out.print("계좌번호(형식:00-00-000):  ");
 			String ano = scanner.nextLine();
 			
-			if(findAccount(ano) != null) {
-				System.out.println("이미 등록된 계좌입니다. 다른 계좌를 입력해 주세요.");
+			String regExp = "\\d{2}-\\d{2}-\\d{3}"; //계좌 번호 형식-정규 표현식
+			boolean result = Pattern.matches(regExp, ano);
+			if(result) { //result == true
+				if(findAccount(ano) != null) {
+					System.out.println("이미 등록된 계좌입니다. 다른 계좌를 입력해 주세요.");
+				}else {
+					System.out.print("계좌주:  ");
+					String owner = scanner.nextLine();
+					
+					System.out.print("초기입금액:  ");
+					int balance = Integer.parseInt(scanner.nextLine());
+					//신규 계좌 생성
+					Account newAccount = new Account(ano, owner, balance); 
+					accountList.add(newAccount);  //리스트에 추가(저장)
+					System.out.println("결과: 계좌가 생성되었습니다.");
+					break;
+				}
 			}else {
-				System.out.print("계좌주:  ");
-				String owner = scanner.nextLine();
-				
-				System.out.print("초기입금액:  ");
-				int balance = Integer.parseInt(scanner.nextLine());
-				//신규 계좌 생성
-				Account newAccount = new Account(ano, owner, balance); 
-				accountList.add(newAccount);  //리스트에 추가(저장)
-				System.out.println("결과: 계좌가 생성되었습니다.");
-				break;
+				System.out.println("올바른 계좌 형식이 아닙니다. 다시 입력해 주세요");
 			}
 		}//while 끝
 	}

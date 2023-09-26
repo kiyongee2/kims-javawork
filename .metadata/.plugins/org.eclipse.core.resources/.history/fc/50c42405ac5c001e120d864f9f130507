@@ -1,0 +1,5 @@
+package dataio.serialization;
+
+public class Product {
+
+}

@@ -1,0 +1,15 @@
+package regexpression;
+
+import java.util.regex.Pattern;
+
+public class PatternExample {
+
+	public static void main(String[] args) {
+		
+		String regExp = "(02|010)-\\d{3,4}-\\d{4}";
+		String phone = "010-1234-5678";
+		boolean result = Pattern.matches(regExp, phone);
+		System.out.println(result);
+	}
+
+}
