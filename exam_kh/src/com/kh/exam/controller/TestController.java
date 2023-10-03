@@ -25,6 +25,7 @@ public class TestController {
 				i--;
 			}
 		}
+		sc.close();
 		System.out.println("=== 주민번호 정보 등록 완료 ===");
 		System.out.println(Arrays.toString(personArr));
 	}

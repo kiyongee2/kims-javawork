@@ -16,9 +16,9 @@ public class BankArrayList {
 		
 		while(sw) {
 			try {
-				System.out.println("-----------------------------------------------------------------");
-				System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.계좌삭제 | 6.계좌검색 | 7.종료");
-				System.out.println("-----------------------------------------------------------------");
+				System.out.println("-------------------------------------------------------");
+				System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.계좌삭제 | 6.종료");
+				System.out.println("-------------------------------------------------------");
 				System.out.print("선택> ");
 				
 				//메뉴 선택 변수, 문자형을 숫자형으로 변환
@@ -35,8 +35,6 @@ public class BankArrayList {
 				}else if(selectNo == 5) {
 					removeAccount();
 				}else if(selectNo == 6) {
-					selectAccount();
-				}else if(selectNo == 7) {
 					sw = false;
 				}else {
 					System.out.println("지원되지 않는 기능입니다. 다시 입력해주세요");
@@ -167,34 +165,6 @@ public class BankArrayList {
 						//accountList.remove(account);  //계좌 삭제
 						accountList.remove(i);
 						System.out.println("결과: 계좌가 삭제 되었습니다.");
-						break;
-					}
-				}
-				break;
-			}else {
-				System.out.println("결과: 계좌가 없습니다. 다시 입력해 주세요.");
-			}
-		}
-	}
-	
-	//특정 계좌 1개를 검색하는 메서드
-	private static void selectAccount() {
-		System.out.println("-------------------------------------------");
-		System.out.println(                  "계좌 검색"                  );
-		System.out.println("-------------------------------------------");
-		
-		while(true) {
-			System.out.print("계좌번호:  ");
-			String ano = scanner.nextLine();
-			
-			if(findAccount(ano) != null) { //계좌를 찾았다면(반환값이 있다면)
-				for(int i = 0; i < accountList.size(); i++) {
-					String dbAno = accountList.get(i).getAno(); //이미 등록된 계좌번호
-					if(dbAno.equals(ano)) { //등록된 계좌와 찾는 계좌가 일치하면
-						Account account = accountList.get(i); //등록 계좌 객체 생성
-						System.out.print("계좌번호: " + account.getAno() + "\t");
-						System.out.print("계좌주: " + account.getOwner() + "\t");
-						System.out.println("잔액: " + account.getBalance());
 						break;
 					}
 				}

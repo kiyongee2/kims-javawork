@@ -34,9 +34,9 @@ public class BankArrayList {
 				    withdraw();        //출금
 				}else if(selectNo == 5) {
 					removeAccount();
-				}else if(selectNo == 6) {
+				}else if(selectNo == 5) {
 					selectAccount();
-				}else if(selectNo == 7) {
+				}else if(selectNo == 6) {
 					sw = false;
 				}else {
 					System.out.println("지원되지 않는 기능입니다. 다시 입력해주세요");
