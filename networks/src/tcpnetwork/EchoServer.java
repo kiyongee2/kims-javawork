@@ -3,8 +3,6 @@ package tcpnetwork;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -42,7 +40,7 @@ public class EchoServer {
 			public void run() {
 				//ServerSocket 생성 및 Port 바인딩
 				try {
-					serverSocket = new ServerSocket(50001);
+					serverSocket = new ServerSocket(7000);
 					System.out.println("[서버] 시작됨");
 					
 					while(true) {

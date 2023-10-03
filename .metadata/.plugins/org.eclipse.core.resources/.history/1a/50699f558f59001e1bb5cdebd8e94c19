@@ -1,5 +1,0 @@
-package lambda.person;
-
-public interface Workable {
-
-}

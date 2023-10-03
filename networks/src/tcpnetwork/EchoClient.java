@@ -12,7 +12,7 @@ public class EchoClient {
 
 	public static void main(String[] args) {
 		try {
-			Socket socket = new Socket("localhost", 50001);
+			Socket socket = new Socket("localhost", 7);
 			
 			System.out.println("[클라이언트] 연결 성공");
 			//----------------------------------------------
@@ -34,13 +34,16 @@ public class EchoClient {
 			//--------------------------------------------------------------
 			//데이터 보내기
 			String sendMessage = "오늘도 즐거운 하루 되세요~";
-			DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+			OutputStream os = socket.getOutputStream();
+			DataOutputStream dos = new DataOutputStream(os);
 			dos.writeUTF(sendMessage);
+			
 			dos.flush();
 			System.out.println("[클라이언트] 데이터 보냄: " + sendMessage);
 			
 			//데이터 받기
-			DataInputStream dis = new DataInputStream(socket.getInputStream());
+			InputStream is = socket.getInputStream();
+			DataInputStream dis = new DataInputStream(is);
 			String receiveMessage = dis.readUTF();
 			System.out.println("[클라이언트] 데이터 받음: " + receiveMessage);
 			//---------------------------------------------------------------

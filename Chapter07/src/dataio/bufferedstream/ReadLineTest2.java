@@ -10,7 +10,7 @@ public class ReadLineTest2 {
 	public static void main(String[] args) {
 		//FileReader에 BufferedReader 보조 스트림 연결
 		try(BufferedReader br = new BufferedReader(
-				new FileReader("src/dataio/decorator/ReadLineTest2.java"))){
+				new FileReader("src/dataio/bufferedstream/ReadLineTest2.java"))){
 			int lineNo = 1;  //줄(행) 라인
 			while(true) {
 				String str = br.readLine();  //1행을 읽음
