@@ -1,0 +1,27 @@
+package strings;
+
+public class StringMethod1 {
+
+	public static void main(String[] args) {
+		
+		String personId = "951005-1234567";  //주민등록번호
+		
+		String firstNum = personId.substring(0, 6);
+		System.out.println(firstNum);
+		
+		String secondNum = personId.substring(7);
+		System.out.println(secondNum);
+		
+		//성별 구분
+		char gender = personId.charAt(7);
+		if(personId.length() == 14) {
+			if(gender == '1' || gender == '3') {
+				System.out.println("남자");
+			}
+			if(gender == '2' || gender == '4') {
+				System.out.println("여자");
+			}
+		}
+	}
+
+}

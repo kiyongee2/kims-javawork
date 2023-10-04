@@ -12,10 +12,10 @@ import org.json.JSONObject;
 public class SocketClient {
 	ChatServer chatServer;
 	Socket socket;
-	String clientIp;
-	String chatName;
 	DataInputStream dis;
 	DataOutputStream dos;
+	String clientIp;
+	String chatName;
 	
 	public SocketClient(ChatServer chatServer, Socket socket) {
 		try {
@@ -68,7 +68,7 @@ public class SocketClient {
 	}
 	
 	//메서드 : JSON 보내기
-	public void send(String json) {
+	public void send(String json) { //처음엔 시그니처만 작성(선언부)
 		try {
 			dos.writeUTF(json);
 			dos.flush();  

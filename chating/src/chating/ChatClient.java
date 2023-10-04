@@ -28,8 +28,8 @@ public class ChatClient {
 	public void receive() {
 		//항상 받을 준비함 - 스레드를 만들어야함
 		Thread thread = new Thread(()->{
-			while(true) {
-				try {
+			try {
+				while(true) {
 					String json = dis.readUTF();
 					
 					//읽은 데이터를 파싱함
@@ -39,10 +39,10 @@ public class ChatClient {
 					String chatName = root.getString("chatName");
 					String message = root.getString("message");
 					System.out.println("<" + chatName + "@" + clientIp + ">" + message);
-				} catch (IOException e) {
-					System.out.println("[클라이언트] 서버에 연결 끊김");
-					System.exit(0);  //process 완전 종료
 				}
+			} catch (IOException e) {
+				System.out.println("[클라이언트] 서버에 연결 끊김");
+				System.exit(0);  //process 완전 종료
 			}
 		});
 		thread.start();
@@ -72,8 +72,8 @@ public class ChatClient {
 			jsonObject.put("command", "incoming");
 			jsonObject.put("data", chatClient.chatName);
 			String json = jsonObject.toString();
-			
 			chatClient.send(json); //데이터를 보냄
+			
 			chatClient.receive();  //받을 준비함
 			
 			System.out.println("============================================");

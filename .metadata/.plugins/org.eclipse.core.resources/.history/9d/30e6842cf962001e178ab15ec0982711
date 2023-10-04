@@ -1,0 +1,22 @@
+package strings;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class StringMethod2 {
+
+	public static void main(String[] args) {
+		
+		String[] season = new String[4];
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i=0; i<season.length; i++) {
+			System.out.print("계절을 입력하시오: ");
+			season[i] = sc.nextLine();
+		}
+		
+		System.out.println(Arrays.toString(season));
+	}
+
+}
