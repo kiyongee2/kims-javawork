@@ -65,15 +65,24 @@ public class BankArrayList {
 				if(findAccount(ano) != null) {
 					System.out.println("이미 등록된 계좌입니다. 다른 계좌를 입력해 주세요.");
 				}else {
-					System.out.print("계좌주:  ");
-					String owner = scanner.nextLine();
-					
-					System.out.print("초기입금액:  ");
-					int balance = Integer.parseInt(scanner.nextLine());
-					//신규 계좌 생성
-					Account newAccount = new Account(ano, owner, balance); 
-					accountList.add(newAccount);  //리스트에 추가(저장)
-					System.out.println("결과: 계좌가 생성되었습니다.");
+					while(true) {
+						System.out.print("계좌주(한글, 영문):  ");
+						String owner = scanner.nextLine();
+						
+						regExp = "[a-zA-Z가-힣]+";
+						result = Pattern.matches(regExp, owner);
+						if(result) {
+							System.out.print("초기입금액:  ");
+							int balance = Integer.parseInt(scanner.nextLine());
+							//신규 계좌 생성
+							Account newAccount = new Account(ano, owner, balance); 
+							accountList.add(newAccount);  //리스트에 추가(저장)
+							System.out.println("결과: 계좌가 생성되었습니다.");
+							break;
+						}else {
+							System.out.println("계좌주 이름은 한글과 영문만 가능합니다. 다시 입력해 주세요");
+						}
+					}
 					break;
 				}
 			}else {

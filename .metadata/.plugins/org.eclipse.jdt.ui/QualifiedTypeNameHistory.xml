@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
-    <fullyQualifiedTypeName name="banking.array.Account"/>
-    <fullyQualifiedTypeName name="java.io.Writer"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
-    <fullyQualifiedTypeName name="chating.SocketClient"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="chating.ChatServer"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -35,7 +27,6 @@
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.awt.Toolkit"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
@@ -43,7 +34,6 @@
     <fullyQualifiedTypeName name="threads.waitnotify.WorkObject"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="org.json.JSONArray"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
@@ -52,7 +42,6 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
-    <fullyQualifiedTypeName name="java.net.InetSocketAddress"/>
     <fullyQualifiedTypeName name="java.net.Socket"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
     <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="java.io.DataInputStream"/>
     <fullyQualifiedTypeName name="java.util.Hashtable"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.sql.Blob"/>
+    <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
+    <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
+    <fullyQualifiedTypeName name="java.net.SocketAddress"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.net.InetSocketAddress"/>
 </qualifiedTypeNameHistroy>

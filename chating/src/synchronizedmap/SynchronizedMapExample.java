@@ -3,6 +3,7 @@ package synchronizedmap;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class SynchronizedMapExample {
 
@@ -38,6 +39,10 @@ public class SynchronizedMapExample {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		
+		Set<Integer> key = map.keySet();
+		for(Integer i : key)
+			System.out.println(i + map.get(i));
 		
 		System.out.println("총 객체수: " + map.size());
 	}
