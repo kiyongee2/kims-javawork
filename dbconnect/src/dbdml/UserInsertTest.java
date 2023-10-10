@@ -1,4 +1,4 @@
-package dbselect;
+package dbdml;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class UserInsertTest {
-
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -18,9 +17,11 @@ public class UserInsertTest {
 					"pwkhsql");
 			System.out.println("연결 성공");
 			
-			//db 작업
+			//매개변수화된 sql 문 작성
 			String sql = "INSERT INTO users(userid, username, userpassword, userage, useremail) "
 					+ "VALUES(?, ?, ?, ?, ?)";
+			
+			//PreparedStatement 열기 및 값 지정
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, "cloud");
 			pstmt.setString(2, "이구름");
@@ -30,8 +31,8 @@ public class UserInsertTest {
 			
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행 수: " + rows);
-			
 			//자동으로 auto commit이 됨
+			pstmt.close();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {

@@ -8,7 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class BoardWithFileInsertTest {
-
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -24,15 +23,15 @@ public class BoardWithFileInsertTest {
 			String sql = "INSERT INTO boards(bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
 					+ "VALUES(SEQ_BNO.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "smartphone");
-			pstmt.setString(2, "삼성폰");
-			pstmt.setString(3, "today");
+			pstmt.setString(1, "notebook");
+			pstmt.setString(2, "LG 그램 노트북입니다.");
+			pstmt.setString(3, "sky123");
 			pstmt.setString(4, "phone.jpg");
-			pstmt.setBlob(5, new FileInputStream("src/dbdata/phone.jpg"));
+			pstmt.setBlob(5, new FileInputStream("src/dbdml/phone.jpg"));
 			
+			//sql문 실행
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행 수: " + rows);
-			
 			//자동으로 auto commit이 됨
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

@@ -11,7 +11,6 @@ import java.util.List;
 import userdto.User;
 
 public class UserSelectAllTest {
-
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -23,21 +22,21 @@ public class UserSelectAllTest {
 					"pwkhsql");
 			System.out.println("연결 성공");
 			
-			//db 작업
 			String sql = "SELECT userid, username, userpassword, userage, useremail "
 					+ "FROM users";
 			pstmt = conn.prepareStatement(sql);
 			
+			//검색된 데이터 가져오기
 			ResultSet rs = pstmt.executeQuery();
 			List<User> userList = new ArrayList<>();
-			while(rs.next()) {
-				User user = new User();
+			while(rs.next()) {  //데이터가 있는 동안 반복
+				User user = new User(); //객체 1개 생성
 				user.setUserId(rs.getString("userId"));
 				user.setUserName(rs.getString("username"));
 				user.setUserPassword(rs.getString("userPassword"));
 				user.setUserAge(rs.getInt("userage"));
 				user.setUserEmail(rs.getString("useremail"));
-				userList.add(user);
+				userList.add(user);  //리스트에 user 객체 저장
 			}
 			//userList 출력
 			for(int i=0; i<userList.size(); i++) {

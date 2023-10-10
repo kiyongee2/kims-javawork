@@ -26,11 +26,11 @@ public class BoardWithFileInsertTest3 {
 			String sql = "INSERT INTO boards(bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
 					+ "VALUES(SEQ_BNO.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
 			pstmt = conn.prepareStatement(sql, new String[] {"bno", "btitle"});
-			pstmt.setString(1, "smartphone5");
-			pstmt.setString(2, "삼성폰5");
-			pstmt.setString(3, "today");
+			pstmt.setString(1, "smartphone3");
+			pstmt.setString(2, "삼성폰3");
+			pstmt.setString(3, "sky123");
 			pstmt.setString(4, "phone.jpg");
-			pstmt.setBlob(5, new FileInputStream("src/dbdata/phone.jpg"));
+			pstmt.setBlob(5, new FileInputStream("src/dbdml/phone.jpg"));
 			
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행 수: " + rows);

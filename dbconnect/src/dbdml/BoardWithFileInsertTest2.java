@@ -9,7 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class BoardWithFileInsertTest2 {
-
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -25,8 +24,8 @@ public class BoardWithFileInsertTest2 {
 			String sql = "INSERT INTO boards(bno, btitle, bcontent, bwriter, bdate, bfilename, bfiledata) "
 					+ "VALUES(SEQ_BNO.NEXTVAL, ?, ?, ?, SYSDATE, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "smartphone");
-			pstmt.setString(2, "삼성폰");
+			pstmt.setString(1, "notebook2");
+			pstmt.setString(2, "LG 그램 노트북입니다.");
 			pstmt.setString(3, "today");
 			pstmt.setString(4, null);
 			Blob blob = null;

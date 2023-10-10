@@ -9,7 +9,6 @@ import java.sql.SQLException;
 import userdto.User;
 
 public class UserSelectOneTest {
-
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -21,14 +20,14 @@ public class UserSelectOneTest {
 					"pwkhsql");
 			System.out.println("연결 성공");
 			
-			//db 작업
 			String sql = "SELECT userid, username, userpassword, userage, useremail "
 					+ "FROM users WHERE userid = ?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, "cloud");
 			
+			//검색된 자료 가져오기
 			ResultSet rs = pstmt.executeQuery();
-			if(rs.next()) {
+			if(rs.next()) {  //데이터가 있으면
 				User user = new User();
 				user.setUserId(rs.getString("userId"));
 				user.setUserName(rs.getString("username"));
