@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import userdto.User;
+import dto.User;
 
 public class UserSelectAllTest {
 	public static void main(String[] args) {
@@ -39,10 +39,21 @@ public class UserSelectAllTest {
 				userList.add(user);  //리스트에 user 객체 저장
 			}
 			//userList 출력
-			for(int i=0; i<userList.size(); i++) {
+			/*for(int i=0; i<userList.size(); i++) {
 				User user = userList.get(i);
 				System.out.println(user);
+			}*/
+			for(User user : userList) {
+				//System.out.println(user);
+				System.out.println("userId: " + user.getUserId());
+				System.out.println("userName: " + user.getUserName());
+				System.out.println("userPassword: " + user.getUserPassword());
+				System.out.println("userAge: " + user.getUserAge());
+				System.out.println("userEmail: " + user.getUserEmail());
+				System.out.println("===========================================");
 			}
+			//스트림과 람다식 사용
+			userList.stream().forEach(user -> System.out.println(user));
 		
 			rs.close();
 			pstmt.close();

@@ -29,9 +29,7 @@ public class BoardDeleteTest {
 			System.out.println("삭제된 행 수: " + rows);
 
 			pstmt.close();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			if(conn != null) {

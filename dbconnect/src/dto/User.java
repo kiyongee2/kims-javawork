@@ -1,4 +1,4 @@
-package userdto;
+package dto;
 
 //dto 클래스
 public class User {

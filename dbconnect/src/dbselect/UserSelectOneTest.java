@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import userdto.User;
+import dto.User;
 
 public class UserSelectOneTest {
 	public static void main(String[] args) {
@@ -34,7 +34,13 @@ public class UserSelectOneTest {
 				user.setUserPassword(rs.getString("userPassword"));
 				user.setUserAge(rs.getInt("userage"));
 				user.setUserEmail(rs.getString("useremail"));
-				System.out.println(user); //user 객체 출력
+				//System.out.println(user); //user 객체 출력
+				
+				System.out.println("userId: " + user.getUserId());
+				System.out.println("userName: " + user.getUserName());
+				System.out.println("userPassword: " + user.getUserPassword());
+				System.out.println("userAge: " + user.getUserAge());
+				System.out.println("userEmail: " + user.getUserEmail());
 			
 				/*String userId = rs.getString("userid");
 				String userName = rs.getString("username");

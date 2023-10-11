@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class BoardUpdateTest {
+public class BoardSelectTest {
 
 	public static void main(String[] args) {
 		Connection conn = null;
