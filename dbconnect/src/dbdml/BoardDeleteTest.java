@@ -23,7 +23,7 @@ public class BoardDeleteTest {
 			//db 작업, 매개 변수화된 SQL 문 작성
 			String sql = "DELETE FROM boards WHERE bwriter = ?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, "cloud");
+			pstmt.setString(1, "sky123");
 	
 			int rows = pstmt.executeUpdate();
 			System.out.println("삭제된 행 수: " + rows);
