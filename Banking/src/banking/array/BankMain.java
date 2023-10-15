@@ -2,6 +2,8 @@ package banking.array;
 
 import java.util.Scanner;
 
+import banking.domain.Account;
+
 public class BankMain {
 	// 통장 계좌를 만들 객체 배열 100개 생성
 	static Account[] accounts = new Account[100]; 

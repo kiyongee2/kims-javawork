@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author kiyon
- *
- */
-module Banking {
-}

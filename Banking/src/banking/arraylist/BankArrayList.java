@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-import banking.array.Account;
+import banking.domain.Account;
 
 public class BankArrayList {
 	//통장 계좌를 만들 ArrayList 생성
