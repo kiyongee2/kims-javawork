@@ -153,7 +153,7 @@ public class BoardExample2 {
 			e.printStackTrace();
 			exit();
 		}
-		
+		//목록 함수 호출
 		list();
 	}
 	
@@ -174,7 +174,7 @@ public class BoardExample2 {
 				exit();
 			}
 		}
-		
+		//목록 함수 호출
 		list();
 	}
 	
