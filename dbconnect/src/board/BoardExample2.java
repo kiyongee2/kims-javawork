@@ -164,10 +164,19 @@ public class BoardExample2 {
 		System.out.print("선택: ");
 		String menuNo = scanner.nextLine();
 		if(menuNo.equals("1")) {
-			String sql = "TRUNCATE TABLE board";
 			try {
+				String sql = "TRUNCATE TABLE board";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.executeUpdate();
+				
+				sql = "DROP SEQUENCE seq_bno";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.executeUpdate();
+				
+				sql = "CREATE SEQUENCE seq_bno";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.executeUpdate();
+				
 				pstmt.close();
 			} catch (SQLException e) {
 				e.printStackTrace();

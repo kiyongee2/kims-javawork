@@ -230,10 +230,20 @@ public class BoardExample3 {
 		System.out.print("선택: ");
 		String menuNo = scanner.nextLine();
 		if(menuNo.equals("1")) {
-			String sql = "TRUNCATE TABLE board";
 			try {
+				String sql = "TRUNCATE TABLE board";  //모든 데이터 삭제
 				pstmt = conn.prepareStatement(sql);
 				pstmt.executeUpdate();
+				
+				//데이터 생성시 글번호 이전 번호 초기화하여 1부터 시작하기
+				sql = "DROP SEQUENCE seq_bno";   //시퀀스 삭제
+				pstmt = conn.prepareStatement(sql);
+				pstmt.executeUpdate();
+				
+				sql = "CREATE SEQUENCE seq_bno";  //시퀀스 생성
+				pstmt = conn.prepareStatement(sql);
+				pstmt.executeUpdate();
+				
 				pstmt.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
