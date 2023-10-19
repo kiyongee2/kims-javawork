@@ -1,12 +1,10 @@
-     package board;
+     package board_mysql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class BoardExample3 {
@@ -18,11 +16,11 @@ public class BoardExample3 {
 	//생성자
 	public BoardExample3() {
 		try {
-			Class.forName("oracle.jdbc.OracleDriver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(
-					"jdbc:oracle:thin:@localhost:1521/xe",
-					"c##khsql",
-					"pwkhsql");
+					"jdbc:mysql://127.0.0.1:3306/mydb?serverTime=Asia/Seoul",
+					"myuser",
+					"pwmyuser");
 		}catch(Exception e) {
 			e.printStackTrace();
 			exit();
@@ -32,7 +30,7 @@ public class BoardExample3 {
 	public void list() {
 		System.out.println("[게시물 목록]");
 		System.out.println("-----------------------------------------------------");
-		System.out.printf("%-4s%-12s%-12s%-40s\n", "no", "writer", "date", "title");
+		System.out.printf("%-4s%-12s%-30s%-30s\n", "no", "writer", "date", "title");
 		System.out.println("-----------------------------------------------------");
 
 		//board 테이블에서 게시물 정보를 가져와서 출력하기
@@ -46,9 +44,9 @@ public class BoardExample3 {
 				board.setBno(rs.getInt("bno"));
 				board.setBwriter(rs.getString("bwriter"));
 				board.setBtitle(rs.getString("btitle"));
-				board.setBdate(rs.getDate("bdate"));
+				board.setBdate(rs.getTimestamp("bdate"));
 				//board.setBcontent(rs.getString("bcontent"));
-				System.out.printf("%-4s%-12s%-12s%-40s \n", 
+				System.out.printf("%-4s%-12s%-30s%-30s \n", 
 					board.getBno(),
 					board.getBwriter(),
 					board.getBdate(),
@@ -116,7 +114,6 @@ public class BoardExample3 {
 				e.printStackTrace();
 				exit();
 			}
-			
 		}
 		//게시물 목록 출력
 		list();
@@ -140,7 +137,7 @@ public class BoardExample3 {
 				board.setBtitle(rs.getString("btitle"));
 				board.setBcontent(rs.getString("bcontent"));
 				board.setBwriter(rs.getString("bwriter"));
-				board.setBdate(rs.getDate("bdate"));
+				board.setBdate(rs.getTimestamp("bdate"));
 				
 				//게시글 출력
 				System.out.println("*****************************************************");
@@ -232,15 +229,6 @@ public class BoardExample3 {
 		if(menuNo.equals("1")) {
 			try {
 				String sql = "TRUNCATE TABLE board";  //모든 데이터 삭제
-				pstmt = conn.prepareStatement(sql);
-				pstmt.executeUpdate();
-				
-				//데이터 생성시 글번호 이전 번호 초기화하여 1부터 시작하기
-				sql = "DROP SEQUENCE seq_bno";   //시퀀스 삭제
-				pstmt = conn.prepareStatement(sql);
-				pstmt.executeUpdate();
-				
-				sql = "CREATE SEQUENCE seq_bno";  //시퀀스 생성
 				pstmt = conn.prepareStatement(sql);
 				pstmt.executeUpdate();
 				
