@@ -31,7 +31,6 @@ public class UserInsertTest {
 			
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행 수: " + rows);
-			//자동으로 auto commit이 됨
 			pstmt.close();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

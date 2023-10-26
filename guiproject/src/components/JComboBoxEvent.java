@@ -1,4 +1,4 @@
-package actionlisteners;
+package components;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -8,13 +8,13 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class ComboBoxEvent extends JFrame{
+public class JComboBoxEvent extends JFrame{
 	
 	String[] money = {"달러", "위안", "유로", "엔"};
 	JComboBox<String> comboBox;
 	JLabel label;
 	
-	public ComboBoxEvent() {
+	public JComboBoxEvent() {
 		setTitle("목록 메뉴");
 		setSize(300, 150); 
 		setLocation(100, 100);
@@ -43,7 +43,7 @@ public class ComboBoxEvent extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		new ComboBoxEvent();
+		new JComboBoxEvent();
 	}
 
 }

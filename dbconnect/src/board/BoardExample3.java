@@ -38,7 +38,7 @@ public class BoardExample3 {
 		//board 테이블에서 게시물 정보를 가져와서 출력하기
 		try {
 			String sql = "SELECT bno, btitle, bcontent, bwriter, bdate"
-					+ " FROM board ORDER BY bno DESC";
+					+ " FROM t_board ORDER BY bno DESC";
 			pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
@@ -103,8 +103,8 @@ public class BoardExample3 {
 		if(menuNo.equals("1")) {
 			
 			try {
-				String sql = "INSERT INTO board(btitle, bcontent, bwriter) "
-						+ "VALUES(?, ?, ?)";
+				String sql = "INSERT INTO t_board(bno, btitle, bcontent, bwriter) "
+						+ "VALUES (seq.NEXTVAL, ?, ?, ?)";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, board.getBtitle());
 				pstmt.setString(2, board.getBcontent());
@@ -130,7 +130,7 @@ public class BoardExample3 {
 		
 		try {
 			String sql = "SELECT bno, btitle, bcontent, bwriter, bdate"
-					+ " FROM board WHERE bno = ?";
+					+ " FROM t_board WHERE bno = ?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, bno);
 			ResultSet rs = pstmt.executeQuery();
@@ -188,7 +188,7 @@ public class BoardExample3 {
 		String menuNo = scanner.nextLine();
 		if(menuNo.equals("1")) {
 			try {
-				String sql = "UPDATE board "
+				String sql = "UPDATE t_board "
 						+ "SET btitle = ?, bcontent = ?, bwriter = ? "
 						+ "WHERE bno = ?";
 				pstmt = conn.prepareStatement(sql);
@@ -210,7 +210,7 @@ public class BoardExample3 {
 	public void delete(Board board) {
 		//System.out.println("[게시글 삭제]");
 		try {
-			String sql = "DELETE FROM board WHERE bno = ?";
+			String sql = "DELETE FROM t_board WHERE bno = ?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, board.getBno());
 			pstmt.executeUpdate();
@@ -231,7 +231,7 @@ public class BoardExample3 {
 		String menuNo = scanner.nextLine();
 		if(menuNo.equals("1")) {
 			try {
-				String sql = "TRUNCATE TABLE board";  //모든 데이터 삭제
+				String sql = "TRUNCATE TABLE t_board";  //모든 데이터 삭제
 				pstmt = conn.prepareStatement(sql);
 				pstmt.executeUpdate();
 				
