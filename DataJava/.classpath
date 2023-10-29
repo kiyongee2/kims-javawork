@@ -8,5 +8,8 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/kh-java/jsoup-1.16.1.jar"/>
 	<classpathentry kind="lib" path="lib/json-20230618.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.13.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-2.13.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.13.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

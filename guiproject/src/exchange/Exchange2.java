@@ -22,7 +22,7 @@ public class Exchange2 extends JFrame implements ActionListener{
 	static final float USD = 1092.5F;
 	static final float CNY = 169.07F;
 	static final float EUR = 1366.23F;
-	static final float JPY = 10.51F;
+	static final float JPY = 9.0739F;
 	
 	JPanel pane1;
 	JPanel pane2;
@@ -84,9 +84,9 @@ public class Exchange2 extends JFrame implements ActionListener{
 			float won = Float.parseFloat(text.getText());
 			String currency = (String)comboBox.getSelectedItem();
 			//유효성 검사
-			String regExp = "\\d+";  //숫자만
+			String regExp = "[a-z]+";  //숫자만
 			Boolean result = Pattern.matches(regExp, text.getText());
-			if(result) {
+			if(!result) {
 				switch(currency) {
 				case "달러":
 				  won = won / USD;
