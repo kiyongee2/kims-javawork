@@ -327,7 +327,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_BE2CkHP-Ee6ayo4EPLjDJA" containerData="8896" selectedElement="_BE2CpXP-Ee6ayo4EPLjDJA">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_BE2CkXP-Ee6ayo4EPLjDJA" containerData="7138" selectedElement="_BE2CknP-Ee6ayo4EPLjDJA" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_BE2CkXP-Ee6ayo4EPLjDJA" containerData="5011" selectedElement="_BE2CknP-Ee6ayo4EPLjDJA" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_BE2CknP-Ee6ayo4EPLjDJA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_BE2FhnP-Ee6ayo4EPLjDJA"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_BE2Ck3P-Ee6ayo4EPLjDJA" toBeRendered="false" containerData="2500">
                   <children xsi:type="basic:PartSashContainer" xmi:id="_BE2ClHP-Ee6ayo4EPLjDJA" toBeRendered="false" containerData="5000">
@@ -385,7 +385,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_BE2CpXP-Ee6ayo4EPLjDJA" containerData="2862" selectedElement="_BE2Cs3P-Ee6ayo4EPLjDJA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_BE2CpXP-Ee6ayo4EPLjDJA" containerData="4989" selectedElement="_BE2Cs3P-Ee6ayo4EPLjDJA">
                 <children xsi:type="basic:PartSashContainer" xmi:id="_BE2CpnP-Ee6ayo4EPLjDJA" containerData="6350" selectedElement="_BE2CsXP-Ee6ayo4EPLjDJA" horizontal="true">
                   <children xsi:type="basic:PartStack" xmi:id="_BE2Cp3P-Ee6ayo4EPLjDJA" elementId="bottom" containerData="9000" selectedElement="_BE2CrHP-Ee6ayo4EPLjDJA">
                     <tags>org.eclipse.e4.secondaryDataStack</tags>
@@ -755,24 +755,24 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_BE2FhnP-Ee6ayo4EPLjDJA" elementId="org.eclipse.ui.editorss" selectedElement="__lb5kHQHEe65VZzsAT9YSQ">
-      <children xsi:type="basic:PartSashContainer" xmi:id="__lb5kHQHEe65VZzsAT9YSQ" selectedElement="_BE2FiHP-Ee6ayo4EPLjDJA" horizontal="true">
-        <children xsi:type="basic:PartStack" xmi:id="_BE2FiHP-Ee6ayo4EPLjDJA" elementId="PartStack@74ed1671" containerData="8478" selectedElement="_fv5-gHaQEe6Muo_MDzUqHw">
-          <tags>active</tags>
+      <children xsi:type="basic:PartSashContainer" xmi:id="__lb5kHQHEe65VZzsAT9YSQ" selectedElement="__lb5kXQHEe65VZzsAT9YSQ" horizontal="true">
+        <children xsi:type="basic:PartStack" xmi:id="_BE2FiHP-Ee6ayo4EPLjDJA" elementId="PartStack@74ed1671" containerData="1833" selectedElement="_fv5-gHaQEe6Muo_MDzUqHw">
           <children xsi:type="basic:Part" xmi:id="_fv5-gHaQEe6Muo_MDzUqHw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="JsoupTest1.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;JsoupTest1.java&quot; partName=&quot;JsoupTest1.java&quot; title=&quot;JsoupTest1.java&quot; tooltip=&quot;DataJava/src/scraping/JsoupTest1.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DataJava/src/scraping/JsoupTest1.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;593&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;JsoupTest1.java&quot; partName=&quot;JsoupTest1.java&quot; title=&quot;JsoupTest1.java&quot; tooltip=&quot;DataJava/src/scraping/JsoupTest1.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DataJava/src/scraping/JsoupTest1.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;294&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>removeOnHide</tags>
+            <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          </children>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="__lb5kXQHEe65VZzsAT9YSQ" elementId="PartStack@5d2a8d1a" containerData="8167" selectedElement="_SeAz0HZSEe6deu1R2tttqg">
+          <tags>active</tags>
+          <children xsi:type="basic:Part" xmi:id="_SeAz0HZSEe6deu1R2tttqg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ExchangeRate.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ExchangeRate.java&quot; partName=&quot;ExchangeRate.java&quot; title=&quot;ExchangeRate.java&quot; tooltip=&quot;DataJava/src/scraping/ExchangeRate.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DataJava/src/scraping/ExchangeRate.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;373&quot; selectionTopPixel=&quot;18&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>removeOnHide</tags>
             <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
             <tags>active</tags>
             <tags>activeOnClose</tags>
-          </children>
-        </children>
-        <children xsi:type="basic:PartStack" xmi:id="__lb5kXQHEe65VZzsAT9YSQ" elementId="PartStack@5d2a8d1a" containerData="1522" selectedElement="_SeAz0HZSEe6deu1R2tttqg">
-          <children xsi:type="basic:Part" xmi:id="_SeAz0HZSEe6deu1R2tttqg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ExchangeRate.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ExchangeRate.java&quot; partName=&quot;ExchangeRate.java&quot; title=&quot;ExchangeRate.java&quot; tooltip=&quot;DataJava/src/scraping/ExchangeRate.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DataJava/src/scraping/ExchangeRate.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;1444&quot; selectionOffset=&quot;264&quot; selectionTopPixel=&quot;18&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>removeOnHide</tags>
-            <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_y3F_4HaSEe6Muo_MDzUqHw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="StockInfo.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;StockInfo.java&quot; partName=&quot;StockInfo.java&quot; title=&quot;StockInfo.java&quot; tooltip=&quot;DataJava/src/scraping/StockInfo.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DataJava/src/scraping/StockInfo.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;25&quot; selectionOffset=&quot;326&quot; selectionTopPixel=&quot;253&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -1215,7 +1215,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BE2GK3P-Ee6ayo4EPLjDJA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_z2bSwHaOEe6Muo_MDzUqHw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_BE2VnXP-Ee6ayo4EPLjDJA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_k13GF3ccEe6_2_TwmlbhxQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_BE2VnXP-Ee6ayo4EPLjDJA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BE2GOHP-Ee6ayo4EPLjDJA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1223,8 +1223,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BE2GOnP-Ee6ayo4EPLjDJA" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_z2eWEHaOEe6Muo_MDzUqHw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_BE2Tf3P-Ee6ayo4EPLjDJA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_z2e9IHaOEe6Muo_MDzUqHw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_BE2UJHP-Ee6ayo4EPLjDJA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_k13GHXccEe6_2_TwmlbhxQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_BE2Tf3P-Ee6ayo4EPLjDJA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_k13GHnccEe6_2_TwmlbhxQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_BE2UJHP-Ee6ayo4EPLjDJA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BE2GPnP-Ee6ayo4EPLjDJA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1257,7 +1257,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BE2Gm3P-Ee6ayo4EPLjDJA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_z2e9JnaOEe6Muo_MDzUqHw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_BE2VQHP-Ee6ayo4EPLjDJA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_k13GJHccEe6_2_TwmlbhxQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_BE2VQHP-Ee6ayo4EPLjDJA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BE2GqHP-Ee6ayo4EPLjDJA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
